@@ -1,0 +1,93 @@
+* {
+  overflow-wrap: break-word;
+}
+
+.basetable td, .basetable th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+
+
+/* flip-scroll */
+@media only screen and (max-width: 800px) {
+  
+    #flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+    #flip-scroll * html .cf { zoom: 1; }
+    #flip-scroll *:first-child+html .cf { zoom: 1; }
+    
+    #flip-scroll table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+   
+    #flip-scroll th,
+    #flip-scroll td { margin: 0; vertical-align: top; }
+    #flip-scroll th { text-align: left; }
+    
+    #flip-scroll table { display: block; position: relative; width: 100%; }
+    #flip-scroll thead { display: block; float: left; }
+    #flip-scroll tbody { display: block; width: auto; position: relative; overflow-x: auto; white-space: nowrap; }
+    #flip-scroll thead tr { display: block; }
+    #flip-scroll th { display: block; text-align: right; width: 100%; }
+    #flip-scroll tbody tr { display: inline-block; vertical-align: top; }
+    #flip-scroll td { display: block; min-height: 1.25em; text-align: left; }
+   
+   
+    /* sort out borders */
+   
+    #flip-scroll th { border-bottom: 0; border-left: 0; }
+    #flip-scroll td { border-left: 0; border-right: 0; border-bottom: 0; }
+    #flip-scroll tbody tr { border-left: 1px solid #babcbf; }
+    #flip-scroll th:last-child,
+    #flip-scroll td:last-child { border-bottom: 1px solid #babcbf; }
+}
+
+
+
+/***  noUiSlider  ***/
+.noUiSlider {
+  width:          100%;
+  border:         1px solid #CCC;
+  height:         8px;
+  background:       #EEE;
+  -webkit-touch-callout:  none;
+}
+.noUi-midBar {
+  height:         100%;
+  z-index:        0;
+  background:       #39C;
+  -webkit-touch-callout:  none;
+}
+.noUi-handle > div {
+  position:       absolute;
+  width:          16px;
+  height:         16px;
+  top:          -5px;
+  left:         -8px;
+  z-index:        5;
+  border:         1px solid #CCC;
+  background:       #EEE;
+}
+.noUi-handle > div:hover,
+.noUi-handle > div.noUi-activeHandle {
+  background:       #ACE;
+  border-color:     #369;
+}
+.disabled > .noUi-midBar {
+  background:       #999;
+}
+.disabled .noUi-handle > div {
+  border-color:     #CCC;
+  background:       #CCC;
+}
+@media (-webkit-min-device-pixel-ratio:1.2),-moz-touch-enabled,(max-device-width:1024px){
+  .noUi-handle > div {
+    height:       32px;
+    width:        32px;
+    top:        -13px;
+    left:       -16px;
+  }
+}

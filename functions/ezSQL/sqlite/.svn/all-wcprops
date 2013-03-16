@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/186/trunk/newoj/v3/functions/ezSQL/sqlite
+END
+sqlite_test.db
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/186/trunk/newoj/v3/functions/ezSQL/sqlite/sqlite_test.db
+END
+ez_sql_sqlite.php
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/186/trunk/newoj/v3/functions/ezSQL/sqlite/ez_sql_sqlite.php
+END
+demo.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/186/trunk/newoj/v3/functions/ezSQL/sqlite/demo.php
+END
